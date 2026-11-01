@@ -1,0 +1,31 @@
+{
+  "name": "memorytrust",
+  "version": "0.1.0",
+  "description": "Audits an AI agent's memory store for unverified, stale, contradictory and sensitive content, and scores how much of it can be trusted.",
+  "license": "MIT",
+  "author": "gravion-ux",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "memory-trust": "src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test test/cli.test.js test/findings.test.js test/loader.test.js test/redact.test.js test/report.test.js test/rules.test.js test/scanner.test.js test/schema.test.js",
+    "check": "node --check src/index.js && node --check src/cli.js && node --check src/loader.js && node --check src/schema.js && node --check src/rules.js && node --check src/scanner.js && node --check src/findings.js && node --check src/report.js && node --check src/redact.js",
+    "audit": "node src/cli.js audit ."
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "memory",
+    "trust",
+    "audit",
+    "provenance",
+    "security"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
