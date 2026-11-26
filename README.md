@@ -1,8 +1,10 @@
+<p align="center"><img src="assets/banner.svg" alt="memorytrust banner" width="100%"/></p>
+
 # MemoryTrust
 
-MemoryTrust audits an AI agent's **memory store** — the files an agent writes when it
-remembers things about a user or a project — and scores how much of that stored content
-can be trusted.
+[![CI](https://github.com/gravion-ux/memorytrust/actions/workflows/ci.yml/badge.svg)](https://github.com/gravion-ux/memorytrust/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**MemoryTrust audits an AI agent's memory store — the files an agent writes when it remembers things about a user or a project — and scores how much of that stored content.**
 
 It is a review aid, not a guarantee: it tells you where a human (or a stricter pipeline)
 should look.
