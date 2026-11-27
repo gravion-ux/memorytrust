@@ -43,7 +43,7 @@ function parseFrontmatterData(raw) {
     if (!line.trim() || line.trim().startsWith('#')) continue;
     const match = /^([A-Za-z0-9_.-]+)\s*:\s*(.*)$/.exec(line);
     if (!match) continue;
-    data[match[1]] = parseScalar(match[2]);
+    if (!(match[1] in data)) data[match[1]] = parseScalar(match[2]);
   }
   return data;
 }
